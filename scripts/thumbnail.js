@@ -1,9 +1,11 @@
 /**
-* Thumbnail Helper
-* @description Get the thumbnail url from a post
-* @example
-*     <%- thumbnail(post) %>
+  * Thumbnail Helper
+  * @description Get the thumbnail url from a post
+  * @example
+  * <%- thumbnail(post) %>
 */
+
+/* global hexo */
 hexo.extend.helper.register('thumbnail', function (post) {
-    return post.thumbnail || post.banner || '';
-});
+  return post.thumbnail || post.banner || ''
+})
