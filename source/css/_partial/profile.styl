@@ -115,16 +115,20 @@
                                 position: absolute
                                 z-index: 2
     &.card
-        top: 50px
+        top: 70px
         right: 20px
         z-index: 999
         display: block
         min-width: 280px
-        position: absolute
+        position: fixed
         .profile-inner
             position: relative
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
-            margin-top: 20px
+            margin-top: 0
+            background: rgba(255, 255, 255, .95)
+            > div
+              -webkit-backdrop-filter: blur(10px)
+              backdrop-filter: blur(10px)
             &:before, &:after
                 z-index: 1
                 content: ''
