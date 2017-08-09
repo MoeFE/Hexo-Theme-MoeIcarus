@@ -1,14 +1,14 @@
 <div class="share-container">
-<% if (theme.share === 'jiathis') { %>
+  <% if (theme.share === 'jiathis') { %>
     <%- partial('jiathis') %>
-<% } %>
-<% if (theme.share === 'bdshare') { %>
+  <% } %>
+  <% if (theme.share === 'bdshare') { %>
     <%- partial('bdshare') %>
-<% } %>
-<% if (theme.share === 'addtoany') { %>
+  <% } %>
+  <% if (theme.share === 'addtoany') { %>
     <%- partial('addtoany') %>
-<% } %>
+  <% } %>
 </div>
 <% if (!theme.share || theme.share === 'default') { %>
-    <%- partial('default', { post: post }) %>
+  <%- partial('default', { post: post }) %>
 <% } %>

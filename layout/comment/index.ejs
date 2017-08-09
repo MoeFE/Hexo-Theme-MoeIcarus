@@ -1,17 +1,17 @@
 <% if (post.comments) { %>
-    <% if (theme.comment.disqus) { %>
-        <section id="comments"><%- partial('comment/disqus') %></section>
-    <% } else if (theme.comment.duoshuo) { %>
-        <section id="comments"><%- partial('comment/duoshuo') %></section>
-    <% } else if (theme.comment.youyan) { %>
-        <section id="comments"><%- partial('comment/youyan') %></section>
-    <% } else if (theme.comment.facebook) { %>
-        <section id="comments"><%- partial('comment/facebook') %></section>
-    <% } else if (theme.comment.isso) { %>
-        <section id="comments"><%- partial('comment/isso') %></section>
-    <% } else if (theme.comment.changyan && theme.comment.changyan.appid && theme.comment.changyan.conf) { %>
-        <section id="comments"><%- partial('comment/changyan') %></section>
-	<% } else if (theme.comment.gitment) { %>
-        <section id="comments"><%- partial('comment/gitment') %></section>
-    <% } %>
+  <% if (theme.comment.disqus) { %>
+    <section id="comments"><%- partial('comment/disqus') %></section>
+  <% } else if (theme.comment.duoshuo) { %>
+    <section id="comments"><%- partial('comment/duoshuo') %></section>
+  <% } else if (theme.comment.youyan) { %>
+    <section id="comments"><%- partial('comment/youyan') %></section>
+  <% } else if (theme.comment.facebook) { %>
+    <section id="comments"><%- partial('comment/facebook') %></section>
+  <% } else if (theme.comment.isso) { %>
+    <section id="comments"><%- partial('comment/isso') %></section>
+  <% } else if (theme.comment.changyan && theme.comment.changyan.appid && theme.comment.changyan.conf) { %>
+    <section id="comments"><%- partial('comment/changyan') %></section>
+<% } else if (theme.comment.gitment) { %>
+    <section id="comments"><%- partial('comment/gitment') %></section>
+  <% } %>
 <% } %>

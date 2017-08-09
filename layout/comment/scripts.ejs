@@ -1,19 +1,19 @@
 <% if (theme.comment.disqus) { %>
-    <%- partial('comment/disqus', { script: true }) %>
+  <%- partial('comment/disqus', { script: true }) %>
 <% } else if (theme.comment.duoshuo) { %>
-    <%- partial('comment/duoshuo', { script: true }) %>
+  <%- partial('comment/duoshuo', { script: true }) %>
 <% } else if (theme.comment.youyan) { %>
-    <%- partial('comment/youyan', { script: true }) %>
+  <%- partial('comment/youyan', { script: true }) %>
 <% } else if (theme.comment.facebook) { %>
-    <%- partial('comment/facebook', { script: true }) %>
+  <%- partial('comment/facebook', { script: true }) %>
 <% } else if (theme.comment.isso) { %>
-    <%- partial('comment/isso', { script: true }) %>
+  <%- partial('comment/isso', { script: true }) %>
 <% } else if (theme.comment.changyan && theme.comment.changyan.appid && theme.comment.changyan.conf) { %>
-    <%- partial('comment/changyan', { script: true }) %>
+  <%- partial('comment/changyan', { script: true }) %>
 <% } else if (theme.comment.gitment &&
-    theme.comment.gitment.owner &&
-    theme.comment.gitment.repo &&
-    theme.comment.gitment.client_id &&
-    theme.comment.gitment.client_secret) { %>
-    <%- partial('comment/gitment', { script: true }) %>
+  theme.comment.gitment.owner &&
+  theme.comment.gitment.repo &&
+  theme.comment.gitment.client_id &&
+  theme.comment.gitment.client_secret) { %>
+  <%- partial('comment/gitment', { script: true }) %>
 <% } %>
