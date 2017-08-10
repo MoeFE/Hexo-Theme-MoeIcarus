@@ -1,5 +1,4 @@
 /* global jQuery */
-/* global lightGallery */
 
 (function ($) {
   var toTop = ($('#sidebar').height() - $(window).height()) + 60
@@ -16,14 +15,12 @@
       }
     })
   })
-  if (typeof lightGallery !== 'undefined') {
+  if (typeof jQuery.prototype.lightGallery !== 'undefined') {
     var options = {
       selector: '.gallery-item'
     }
-    $('.article-entry').each(function (i, entry) {
-      lightGallery(entry, options)
-    })
-    lightGallery($('.article-gallery')[0], options)
+    $('.article-entry').lightGallery(options)
+    $($('.article-gallery')[0]).lightGallery(options)
   }
   if ($.prototype.justifiedGallery) { // if justifiedGallery method is defined
     /* eslint-disable */
