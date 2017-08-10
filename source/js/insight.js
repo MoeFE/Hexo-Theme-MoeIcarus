@@ -132,11 +132,11 @@
   }
 
   /**
-     * Calculate the weight of a matched post/page/category/tag.
-     * @param Object            obj     Object to be weighted
-     * @param Array<String>     fields  Object's fields to find matches
-     * @param Array<Integer>    weights Weight of every field
-     */
+   * Calculate the weight of a matched post/page/category/tag.
+   * @param Object            obj     Object to be weighted
+   * @param Array<String>     fields  Object's fields to find matches
+   * @param Array<Integer>    weights Weight of every field
+   */
   function weight (keywords, obj, fields, weights) {
     var value = 0
     parseKeywords(keywords).forEach(function (keyword) {
