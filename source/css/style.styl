@@ -6,83 +6,83 @@
 global-reset()
 
 input, button
-    margin: 0
+  margin: 0
+  padding: 0
+  &::-moz-focus-inner
+    border: 0
     padding: 0
-    &::-moz-focus-inner
-        border: 0
-        padding: 0
 
 html, body, #container
-    height: 100%
+  height: 100%
 
 body
-    color: color-default
-    background: color-background
-    font: font-size font-sans
-    -webkit-text-size-adjust: 100%
+  color: color-default
+  background: color-background
+  font: font-size font-sans
+  -webkit-text-size-adjust: 100%
 
 a
+  color: color-link
+  text-decoration: none
+  &:visited
     color: color-link
-    text-decoration: none
-    &:visited
-        color: color-link
 
 code
-    margin: 0 2px
-    color: #e96900
-    padding: 3px 5px
-    font-size: 0.9em
-    border-radius: 2px
-    font-family: font-mono
-    background-color: #f8f8f8
+  margin: 0 2px
+  color: #e96900
+  padding: 3px 5px
+  font-size: 0.9em
+  border-radius: 2px
+  font-family: font-mono
+  background-color: #f8f8f8
 
 .outer
-    clearfix()
-    max-width: (column-width + gutter-width) * columns + gutter-width
-    margin: 0 auto
-    padding: 0 gutter-width
-    @media mq-mini
-        padding: 0
+  clearfix()
+  max-width: (column-width + gutter-width) * columns + gutter-width
+  margin: 0 auto
+  padding: 0 gutter-width
+  @media mq-mini
+    padding: 0
 
 .left, .alignleft
-    float: left
+  float: left
 
 .right, .alignright
-    float: right
+  float: right
 
 .clear
-    clear: both
+  clear: both
 
 .logo
-    width: logo-width
-    height: logo-height
-    background-repeat: no-repeat
-    background-image: url(logo-url)
-    background-size: logo-width logo-height
+  width: logo-width
+  height: logo-height
+  background-repeat: no-repeat
+  background-image: url(logo-url)
+  background-size: logo-width logo-height
 
 #container
-    position: relative
-    & > .outer
-        margin-bottom: 30px
-        if use-fixed-nav
-          margin-top: header-height
-          @media mq-mini
-            margin-top: header-height + header-sub-height
-          @media mq-mobile
-            margin-top: header-height + header-sub-height
+  position: relative
+  & > .outer
+    margin-bottom: 30px
+    if use-fixed-nav
+      margin-top: header-height
+      @media mq-mini
+        margin-top: header-height + header-sub-height
+      @media mq-mobile
+        margin-top: header-height + header-sub-height
 
 #main
-    @media mq-normal
-        column(main-column)
-    @media mq-tablet
-        if sidebar
-            column(main-column-tablet)
-        else
-            width: 100%
-    @media mq-mobile
-        width: 100%
-    @media mq-mini
-        width: 100%
+  @media mq-normal
+    column(main-column)
+  @media mq-tablet
+    if sidebar
+      column(main-column-tablet)
+    else
+      width: 100%
+  @media mq-mobile
+    width: 100%
+  @media mq-mini
+    width: 100%
 
 @import "_extend"
 @import "_partial/header"
@@ -97,7 +97,7 @@ code
 @import "_highlight/index"
 
 if sidebar is left
-    #main
-        float: right
-    #profile
-        float: right
+  #main
+    float: right
+  #profile
+    float: right

@@ -52,28 +52,28 @@ profile-column = 3
 sidebar-column-tablet = 4
 
 if sidebar
-    _sidebar-column = sidebar-column
+  _sidebar-column = sidebar-column
 else
-    _sidebar-column = 0
+  _sidebar-column = 0
 
 if profile
-    _profile-column = profile-column
+  _profile-column = profile-column
 else
-    _profile-column = 0
+  _profile-column = 0
 
 // Grids
 column-width = 80px
 gutter-width = 20px
 if _sidebar-column is 0 and _profile-column is 0
-    columns = 10
-    main-column = 10
+  columns = 10
+  main-column = 10
 else
-    columns = main-column + _sidebar-column + _profile-column
+  columns = main-column + _sidebar-column + _profile-column
 
 if sidebar
-    main-column-tablet = 6
-    if profile
-        main-column-tablet = 9
+  main-column-tablet = 6
+  if profile
+    main-column-tablet = 9
 
 // Media queries
 mq-mini = "screen and (max-width: 559px)"
