@@ -5,6 +5,12 @@
   <% if (theme.plugins.justifiedgallery) { %>
     <%- css('libs/justified-gallery/justifiedGallery.min') %>
   <% } %>
+  <% if (theme.plugins.hitokoto) { %>
+    <%- partial('plugin/hitokoto') -%>
+  <% } %>
+  <% if (theme.plugins.busuanzi_analytics) { %>
+    <%- partial('plugin/busuanzi-analytics') %>
+  <% } %>
   <% if (theme.plugins.google_analytics) { %>
     <%- partial('plugin/google-analytics') %>
   <% } %>
