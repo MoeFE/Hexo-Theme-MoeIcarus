@@ -129,10 +129,10 @@
             position: relative
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
             margin-top: 0
-            background: rgba(255, 255, 255, .95)
+            background: rgba(255, 255, 255, profile-opacity)
             > div
-              -webkit-backdrop-filter: blur(10px)
-              backdrop-filter: blur(10px)
+              -webkit-backdrop-filter: blur(profile-backdrop-filter-blur)
+              backdrop-filter: blur(profile-backdrop-filter-blur)
             &:before, &:after
                 z-index: 1
                 content: ''
