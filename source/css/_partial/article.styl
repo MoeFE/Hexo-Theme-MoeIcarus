@@ -59,6 +59,10 @@
   color: color-default
   padding: 0 article-padding
   line-height: line-height
+  if use-fixed-nav
+    #more
+      display: block
+      transform: translateY((header-height + header-sub-height + 20px) * -1)
   p
     text-align: justify
   p, table
