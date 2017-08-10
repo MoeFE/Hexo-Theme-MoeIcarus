@@ -121,7 +121,10 @@
         z-index: 999
         display: block
         min-width: 280px
-        position: fixed
+        if use-fixed-nav
+          position: fixed
+        else
+          position: absolute
         .profile-inner
             position: relative
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)

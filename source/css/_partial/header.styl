@@ -1,13 +1,16 @@
 #header
     @extend $block
     background: rgba(255, 255, 255, .95);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    z-index: 998;
+    if use-fixed-nav
+      position: fixed;
+      z-index: 998;
+      top: 0;
+      left: 0;
+      width: 100%;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    else
+      position: relative
     a, a:visited
         white-space: nowrap
         transition: 0.2s ease

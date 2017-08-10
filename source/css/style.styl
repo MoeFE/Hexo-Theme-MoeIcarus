@@ -63,12 +63,13 @@ code
 #container
     position: relative
     & > .outer
-        margin-top: 64px
         margin-bottom: 30px
-        @media mq-mini
-          margin-top: 113px
-        @media mq-mobile
-          margin-top: 113px
+        if use-fixed-nav
+          margin-top: header-height
+          @media mq-mini
+            margin-top: header-height + header-sub-height
+          @media mq-mobile
+            margin-top: header-height + header-sub-height
 
 #main
     @media mq-normal
