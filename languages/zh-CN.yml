@@ -14,7 +14,7 @@ widget:
   recents: '最新文章'
   archives: '归档'
   categories: '分类'
-  links: '链接'
+  links: '友情链接'
   tags: '标签'
   tag_cloud: '标签云'
 article:
