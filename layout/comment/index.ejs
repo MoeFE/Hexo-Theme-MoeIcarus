@@ -12,6 +12,6 @@
   <% } else if (theme.comment.changyan && theme.comment.changyan.appid && theme.comment.changyan.conf) { %>
     <section id="comments"><%- partial('comment/changyan') %></section>
 <% } else if (theme.comment.gitment) { %>
-    <section id="comments"><%- partial('comment/gitment') %></section>
+    <section id="comments"><%- partial('comment/gitment').trim() %></section>
   <% } %>
 <% } %>
