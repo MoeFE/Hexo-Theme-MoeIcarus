@@ -4,6 +4,7 @@
       &copy; <%= date(new Date(), 'YYYY') %> Made with by @<%= config.author || config.title %><br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice" target="_blank">PPOffice</a><br>
       <% if (theme.plugins.hitokoto) { %>
+        <%- partial('plugin/hitokoto') -%>
         <div id="hitokoto"><script>hitokoto()</script></div>
       <% } %>
     </div>
