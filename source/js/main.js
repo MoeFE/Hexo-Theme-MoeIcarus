@@ -61,4 +61,22 @@
       $('body, html').animate({ scrollTop: 0 }, 600)
     })
   }
+
+  // visibilitychange
+  var link = $('link[rel="icon"]')
+  var title = document.title
+  var map = {
+    0: { icon: link.attr('href'), title: '(/≧▽≦/)咦！又好了！' + title },
+    1: { icon: '//www.anotherhome.net/wp-content/themes/Amativeness/fail.ico', title: '(●—●)喔哟，崩溃啦！' }
+  }
+  $(window).on('visibilitychange', function () {
+    var data = map[+document.hidden]
+    link.attr('href', data.icon)
+    document.title = data.title
+    if (!document.hidden) {
+      setTimeout(function () {
+        document.title = title
+      }, 2000)
+    }
+  })
 })(jQuery)
