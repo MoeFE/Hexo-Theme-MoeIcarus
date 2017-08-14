@@ -1,7 +1,7 @@
 <footer id="footer">
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; <%= date(new Date(), 'YYYY') %> Made with by @<%= config.author || config.title %><br>
+      &copy; <%= date(new Date(), 'YYYY') %> Made with <i class="fa fa-heart throb" style="color: #d43f57;"></i> by <%= config.author || config.title %><br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice" target="_blank">PPOffice</a><br>
       <% if (theme.plugins.hitokoto) { %>
         <%- partial('plugin/hitokoto') -%>

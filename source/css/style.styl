@@ -62,6 +62,25 @@ code
   background-image: url(logo-url)
   background-size: logo-width logo-height
 
+@keyframes resize
+  0%
+    transform: scale(1, 1)
+  50%
+    transform: scale(1.1, 0.9)
+  100%
+    transform: scale(1, 1)
+
+@keyframes d
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(.8)
+  to
+    transform: scale(1)
+
+.throb
+  animation: d 1.33s ease-in-out infinite
+
 #nprogress
   .bar
     background: color-link
