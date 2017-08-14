@@ -32,6 +32,16 @@
   <% } %>
   <% if (theme.plugins.chuncai) { %>
     <%- js('//github.elemecdn.com/shalldie/chuncai/master/dist/chuncai.js') %>
-    <script>$.chuncai()</script>
+    <script>
+      $.chuncai({ more: {
+        '传送门': {
+          '首页': function () { location.href = '/' },
+          '归档': function () { location.href = '/archives' },
+          '分类': function () { location.href = '/categories' },
+          '标签': function () { location.href = '/tags' },
+          '关于': function () { location.href = '/about' }
+        }
+      } })
+    </script>
   <% } %>
 <% } %>
