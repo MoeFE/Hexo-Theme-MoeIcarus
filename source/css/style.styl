@@ -69,6 +69,10 @@ code
     box-shadow: 0 0 10px color-link, 0 0 5px color-link
   .spinner
     top: (header-height / 2) - 9px
+    @media mq-mini
+      display: none
+    @media mq-mobile
+      display: none
   .spinner-icon
     border-top-color: color-link
     border-left-color: color-link
