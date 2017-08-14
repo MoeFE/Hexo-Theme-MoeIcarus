@@ -62,6 +62,10 @@ code
   background-image: url(logo-url)
   background-size: logo-width logo-height
 
+#profile, #sidebar, .layout-wrap, .timeline, article
+  @media mq-normal
+    transform: scale(0)
+
 @keyframes resize
   0%
     transform: scale(1, 1)
@@ -79,6 +83,7 @@ code
     transform: scale(1)
 
 .throb
+  display: inline-block
   animation: d 1.33s ease-in-out infinite
 
 #nprogress
@@ -88,21 +93,26 @@ code
     box-shadow: 0 0 10px color-link, 0 0 5px color-link
   .spinner
     top: (header-height / 2) - 9px
-    @media mq-mini
-      display: none
-    @media mq-mobile
-      display: none
   .spinner-icon
     border-top-color: color-link
     border-left-color: color-link
 
 .chuncai-main
+  > .chuncai-chat
+    background: rgba(255, 255, 238, .7) !important
+
+.aplayer
+  background: #fff
+  margin: 10px 0 0 !important
+
+.spinner,
+.aplayer,
+.like-vote,
+.chuncai-main
   @media mq-mini
     display: none !important
   @media mq-mobile
     display: none !important
-  > .chuncai-chat
-    background: rgba(255, 255, 238, .7) !important
 
 #container
   position: relative

@@ -37,4 +37,22 @@
       </div>
       <% } %>
   </div>
+  <% if (theme.plugins.aplayer.enable) { %>
+    <div class='like-vote'>
+      <p class='like-title shake-constant shake-slow'>Do you like me?</p>
+      <div class='like-count'>
+        <i class="demo-icon icon-heart throb"></i><span>0</span>
+      </div>
+    </div>
+  <% } %>
+  <% if (theme.plugins.aplayer.enable) { %>
+    <div id="aplayer" class="aplayer"></div>
+    <script>
+      $(function() {
+        var data = JSON.parse('<%- JSON.stringify(theme.plugins.aplayer) %>');
+        data.options.element = document.querySelector('#aplayer');
+        var ap = new APlayer(data.options);
+      })
+    </script>
+  <% } %>
 </aside>

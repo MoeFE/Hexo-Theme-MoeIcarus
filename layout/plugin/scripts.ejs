@@ -5,6 +5,9 @@
   <% if (theme.plugins.justifiedgallery) { %>
     <%- css('//cdn.bootcss.com/justifiedGallery/3.6.3/css/justifiedGallery.min.css') %>
   <% } %>
+  <% if (theme.plugins.do_you_like_me) { %>
+    <%- css('libs/do-you-like-me/css/like.css') %>
+  <% } %>
   <% if (theme.plugins.busuanzi_analytics) { %>
     <%- partial('plugin/busuanzi-analytics') %>
   <% } %>
@@ -43,5 +46,12 @@
         }
       } })
     </script>
+  <% } %>
+  <% if (theme.plugins.aplayer.enable) { %>
+    <%- js('//cdn.bootcss.com/aplayer/1.6.0/APlayer.min.js') %>
+  <% } %>
+  <% if (theme.plugins.do_you_like_me) { %>
+    <%- js('//cdn.bootcss.com/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js') %>
+    <%- js('libs/do-you-like-me/js/like.js') %>
   <% } %>
 <% } %>
