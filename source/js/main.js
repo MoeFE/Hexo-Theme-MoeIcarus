@@ -73,10 +73,9 @@
     var data = map[+document.hidden]
     link.attr('href', data.icon)
     document.title = data.title
-    if (!document.hidden) {
-      setTimeout(function () {
-        document.title = title
-      }, 2000)
-    }
+    setTimeout(function () {
+      if (document.hidden) return
+      document.title = title
+    }, 2000)
   })
 })(jQuery)
