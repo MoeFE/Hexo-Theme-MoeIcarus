@@ -30,4 +30,8 @@
     </script>
     <%- js('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML') %>
   <% } %>
+  <% if (theme.plugins.chuncai) { %>
+    <%- js('//github.elemecdn.com/shalldie/chuncai/master/dist/chuncai.js') %>
+    <script>$.chuncai();</script>
+  <% } %>
 <% } %>
