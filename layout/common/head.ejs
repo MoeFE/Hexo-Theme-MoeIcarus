@@ -39,7 +39,23 @@
 
   <%- css('//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css') %>
   <%- js('//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js') %>
-  <script>window.addEventListener('DOMContentLoaded', NProgress.start)</script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      NProgress.start()
+      $(document).on('readystatechange', function () {
+        if (document.readyState === 'complete') NProgress.done()
+      })
+      var elements = $('img, script')
+      var loaded = 0
+      elements.on('load', function () {
+        if (loaded === elements.length) NProgress.done()
+        else {
+          var val = ++loaded / elements.length
+          NProgress.status > val ? NProgress.inc(val) : NProgress.set(val)
+        }
+      })
+    })
+  </script>
 
   <%- css('//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css') %>
   <%- css('//cdn.bootcss.com/csshake/1.5.2/csshake.min.css') %>
