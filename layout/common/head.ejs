@@ -52,15 +52,15 @@
   <script>
     $(function() {
       // Init ScrollReveal Animate
-      window.sr = new ScrollReveal()
-      window.sr.reveal('#profile', { mobile: false })
+      window.sr = new ScrollReveal();
+      window.sr.reveal('#profile', { viewFactor: 0 });
       window.sr.reveal('article, .timeline, .layout-wrap', {
         reset: window.location.pathname === '/',
         delay: 100,
         useDelay: 'once',
-        mobile: false
-      })
-      window.sr.reveal('#sidebar', { delay: 200, useDelay: 'once', mobile: false })
+        viewFactor: 0
+      });
+      window.sr.reveal('#sidebar', { delay: 200, useDelay: 'once', viewFactor: 0 });
     })
   </script>
   <%- partial('plugin/scripts', { isHead: true }) %>
