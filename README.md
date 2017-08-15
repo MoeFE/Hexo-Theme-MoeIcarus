@@ -133,16 +133,16 @@ plugins:
 
 **2017-08-14**
 * Added some effect
-* Added the [chuncai](https://github.com/shalldie/chuncai) plugin, A lovely Page Wizard, is responsible for selling moe.
-* Added the [NProgress](https://github.com/rstacruz/nprogress) plugin to display the page load status.
-* Added the [APlayer](https://github.com/MoePlayer/APlayer) plugin, A beautiful HTML5 music player.
-* Added the [Do-you-like-me](https://github.com/DIYgod/Do-you-like-me) plugin, A very creative point of praise plugin.
+* Added the [chuncai](https://github.com/shalldie/chuncai) plugin, A lovely Page Wizard, is responsible for selling moe
+* Added the [NProgress](https://github.com/rstacruz/nprogress) plugin to display the page load status
+* Added the [APlayer](https://github.com/MoePlayer/APlayer) plugin, A beautiful HTML5 music player
+* Added the [Do-you-like-me](https://github.com/DIYgod/Do-you-like-me) plugin, A very creative point of praise plugin
 * Add interesting title changes, Creative comes from https://www.anotherhome.net
-* The article page randomly adds a lovely background image.
+* The article page randomly adds a lovely background image
 
 **2017-08-11**
 * Added the amount of reading of the statistical articles of the [busuanzi](http://busuanzi.ibruce.info/) statistics plugin
-* Added [hitokoto](http://hitokoto.cn/) plugin, Show a lovely word.
+* Added [hitokoto](http://hitokoto.cn/) plugin, Show a lovely word
 
 **2017-08-10**
 * External resources are loaded using CDN
