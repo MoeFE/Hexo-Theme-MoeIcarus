@@ -53,7 +53,7 @@
     $(function() {
       // Init ScrollReveal Animate
       window.sr = new ScrollReveal();
-      window.sr.reveal('#profile', { viewFactor: 0 });
+      window.sr.reveal('#profile', { viewFactor: 0, mobile: false });
       window.sr.reveal('article, .timeline, .layout-wrap', {
         reset: window.location.pathname === '/',
         delay: 100,

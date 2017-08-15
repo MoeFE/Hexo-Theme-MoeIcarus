@@ -63,7 +63,11 @@ code
   background-image: url(logo-url)
   background-size: logo-width logo-height
 
-#profile, #sidebar, .layout-wrap, .timeline, article
+#profile
+  @media mq-normal
+    transform: scale(0)
+
+#sidebar, .layout-wrap, .timeline, article
   transform: scale(0)
 
 @keyframes resize
