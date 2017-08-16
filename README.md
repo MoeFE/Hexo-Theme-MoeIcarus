@@ -7,7 +7,7 @@
 
 ## Preview
 
-![preview](http://i1.bvimg.com/549484/cfab0a3a9d7ec144.png)
+![preview](https://raw.githubusercontent.com/MoeFE/Hexo-Theme-MoeIcarus/master/preview.png)
 
 ## Demo
 
