@@ -167,5 +167,5 @@ plugins:
 
 ## LICENSE
 
-MIT
+[MIT](https://github.com/MoeFE/Hexo-Theme-MoeIcarus/blob/master/LICENSE)
 
