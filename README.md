@@ -127,6 +127,9 @@ plugins:
 
 ## ChangeLog
 
+**2017-08-16**
+* Added apple touch icon
+
 **2017-08-15**
 * Fixed some bug
 * Update a very cute mouse style

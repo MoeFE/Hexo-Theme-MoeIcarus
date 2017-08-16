@@ -35,6 +35,7 @@
 
   <% if (theme.customize.favicon) { %>
     <link rel="icon" href="<%- url_for(theme.customize.favicon) %>" />
+    <link rel="apple-touch-icon" href="<%- url_for(theme.customize.favicon) %>" />
   <% } %>
 
   <%- css('//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css') %>
